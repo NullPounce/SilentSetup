@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilentInstall.com - Silent PowerShell Automation for Enterprise IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">⚡</span>
+                <span class="brand-text">SilentInstall</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <button class="btn btn--primary nav-cta">Join Waitlist</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Launching Soon - Join 2,500+ IT Professionals</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Silent PowerShell</span><br>
+                    Automation for Enterprise IT
+                </h1>
+                <p class="hero-description">
+                    Deploy software silently across your entire infrastructure with zero user interruptions. 
+                    The professional automation platform built by IT administrators, for IT administrators.
+                </p>
+                
+          <!-- Email Signup "Form" (Replaced with Link) -->
+<div class="signup-form-container">
+    <div class="form-group-inline">
+        <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf2xJZm7vnrDWaZ8ozrj1tmcVYcl2osirXkPULX2iA7Eqr_Nw/viewform" 
+            class="btn btn--primary btn--hero"
+            target="_blank" rel="noopener"
+        >
+            <span class="btn-text">Get Early Access</span>
+            <span class="btn-icon">→</span>
+        </a>
+    </div>
+    <p class="signup-note">
+        Join the waitlist for beta access and exclusive PowerShell script library
+    </p>
+</div>
+
+            
+            <!-- Terminal Demo -->
+            <div class="hero-terminal">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control control-close"></span>
+                            <span class="control control-minimize"></span>
+                            <span class="control control-maximize"></span>
+                        </div>
+                        <div class="terminal-title">Windows PowerShell</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">PS C:\></span>
+                            <span class="terminal-command" id="typedCommand"></span>
+                            <span class="terminal-cursor">|</span>
+                        </div>
+                        <div class="terminal-output" id="terminalOutput"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Enterprise-Grade Automation</h2>
+                <p class="section-description">
+                    Purpose-built for IT professionals who demand reliability, control, and scalability
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-feature="0">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Silent PowerShell Execution</h3>
+                    <p class="feature-description">Execute complex installation scripts with zero user prompts or system interruptions</p>
+                    <div class="feature-code">
+                        <code>Install-Package -Name 'Microsoft.PowerShell.Core' -Force -Quiet</code>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="1">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-title">Enterprise Control Panel</h3>
+                    <p class="feature-description">Centralized web dashboard for managing deployments across your entire infrastructure</p>
+                    <div class="feature-code">
+                        <code>Get-ADComputer -Filter * | Install-SoftwarePackage -Silent</code>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="2">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Zero-Downtime Deployment</h3>
+                    <p class="feature-description">Background installations that never interrupt user workflows or system operations</p>
+                    <div class="feature-code">
+                        <code>Start-SilentInstall -Package $app -NoRestart -Background</code>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="3">
+                    <div class="feature-icon">⏰</div>
+                    <h3 class="feature-title">Advanced Scheduling</h3>
+                    <p class="feature-description">Sophisticated deployment scheduling with maintenance windows and rollback capabilities</p>
+                    <div class="feature-code">
+                        <code>Schedule-Installation -Time '02:00' -MaintenanceWindow 4h</code>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="4">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Script Library & Templates</h3>
+                    <p class="feature-description">Pre-built PowerShell modules for common software packages and custom script templates</p>
+                    <div class="feature-code">
+                        <code>Import-Module SilentInstall; Get-ScriptTemplate -Software 'Office365'</code>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="5">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Real-time Monitoring</h3>
+                    <p class="feature-description">Live deployment tracking with detailed logs, error handling, and system health metrics</p>
+                    <div class="feature-code">
+                        <code>Watch-Deployment -JobId $id | Export-InstallationLog</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Demo Section -->
+    <section class="code-demo" id="demo">
+        <div class="section-container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2 class="section-title">PowerShell Automation Made Simple</h2>
+                    <p class="section-description">
+                        Deploy enterprise software across hundreds of machines with a few lines of PowerShell. 
+                        Our automation platform handles the complexity while you focus on strategy.
+                    </p>
+                    <div class="demo-stats">
+                        <div class="stat">
+                            <div class="stat-value">99.7%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">15x</div>
+                            <div class="stat-label">Faster Deployment</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">Zero</div>
+                            <div class="stat-label">Interruptions</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-terminal">
+                    <div class="terminal-window large">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control control-close"></span>
+                                <span class="control control-minimize"></span>
+                                <span class="control control-maximize"></span>
+                            </div>
+                            <div class="terminal-title">SilentInstall PowerShell Module</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="demo-code" id="demoCode">
+                                <!-- Code lines will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Three simple steps to enterprise-wide silent deployment</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step" data-step="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">🔗</div>
+                        <h3 class="step-title">Connect Your Infrastructure</h3>
+                        <p class="step-description">Integrate with Active Directory, SCCM, or import your machine inventory</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-step="1">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">⚙️</div>
+                        <h3 class="step-title">Configure Deployment Jobs</h3>
+                        <p class="step-description">Select software packages, target machines, and set deployment schedules</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-step="2">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">🚀</div>
+                        <h3 class="step-title">Execute Silently</h3>
+                        <p class="step-description">Scripts run automatically with comprehensive logging and zero user interaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="section-container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" data-target="99.7">0</div>
+                    <div class="stat-unit">%</div>
+                    <div class="stat-label">Success Rate</div>
+                    <div class="stat-description">Enterprise deployment reliability</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value" data-target="15">0</div>
+                    <div class="stat-unit">x</div>
+                    <div class="stat-label">Faster Than Manual</div>
+                    <div class="stat-description">Automated deployment speed</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value" data-target="0">0</div>
+                    <div class="stat-unit"></div>
+                    <div class="stat-label">User Interruptions</div>
+                    <div class="stat-description">Silent background operation</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value" data-target="24">0</div>
+                    <div class="stat-unit">/7</div>
+                    <div class="stat-label">Monitoring</div>
+                    <div class="stat-description">Real-time deployment tracking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Benefits Section -->
+    <section class="waitlist-benefits">
+        <div class="section-container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2 class="section-title">Join the Beta Waitlist</h2>
+                    <p class="section-description">
+                        Get exclusive early access to the most advanced PowerShell automation platform for enterprise IT
+                    </p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🚀</span>
+                            <span>Beta access to the automation platform</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📚</span>
+                            <span>Exclusive PowerShell script library (500+ templates)</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🛠️</span>
+                            <span>Priority integration support for your infrastructure</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <span>50% off first year enterprise licensing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎯</span>
+                            <span>Direct influence on feature development roadmap</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📞</span>
+                            <span>Dedicated customer success manager</span>
+                        </div>
+                    </div>
+                </div>
+                
+               <div class="benefits-form">
+    <div class="form-card">
+        <h3>Reserve Your Spot</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2xJZm7vnrDWaZ8ozrj1tmcVYcl2osirXkPULX2iA7Eqr_Nw/viewform"
+           class="btn btn--primary btn--full-width"
+           target="_blank" rel="noopener">
+            Join Waitlist
+        </a>
+        <div class="form-note">
+            <span class="lock-icon">🔒</span>
+            <span>Your information is secure. No spam, ever.</span>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by IT Professionals</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">
+                            "Finally, a solution that understands enterprise IT operations. Silent deployments that actually work."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-title">Senior Systems Administrator</div>
+                            <div class="author-company">TechCorp Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">
+                            "Reduced our software deployment time by 80% while eliminating user complaints about interruptions."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Marcus Rodriguez</div>
+                            <div class="author-title">IT Infrastructure Manager</div>
+                            <div class="author-company">Global Manufacturing Co.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <span class="brand-icon">⚡</span>
+                        <span class="brand-text">SilentInstall</span>
+                    </div>
+                    <p class="footer-description">
+                        Professional PowerShell automation for enterprise IT infrastructure.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#demo">Demo</a>
+                        <a href="#how-it-works">How It Works</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#" target="_blank">Documentation</a>
+                        <a href="#" target="_blank">PowerShell Scripts</a>
+                        <a href="#" target="_blank">Support</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#" target="_blank">About</a>
+                        <a href="#" target="_blank">Contact</a>
+                        <a href="#" target="_blank">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SilentInstall.com. All rights reserved.</p>
+                <p>Built for IT professionals who demand excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
